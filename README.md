@@ -44,7 +44,7 @@ OCR 기술은 문서를 이미지로 스캔하는 작업에 들어가는 시간�
 + tqdm
 
 ## Usage
-Filetree (modifying)
+Filetree (modifying) result folder!!
 
 ## Repository Explaination
 ###### 📁 src<br/>code file
@@ -60,10 +60,6 @@ Filetree (modifying)
 > ###### 📁 None-VGG-BiLSTM-CTC-Seed1111<br/>We tried to test model NVBC(None-VGG-BiLSTM-CTC)
 >> ###### 📄 best_norm_ED.pth<br/>The model we trained that have best norm ED
 >> ###### 📄 best_accuracy.pth<br/>The model we trained that have best accuracy
-
-###### 📁 result<br/>lmdb data
-> ###### 📁 trainig<br/>training lmdb data(empty)
-> ###### 📁 validatdion<br/>validation lmdb data(empty)
 <br/>
 
 ## Architecture
