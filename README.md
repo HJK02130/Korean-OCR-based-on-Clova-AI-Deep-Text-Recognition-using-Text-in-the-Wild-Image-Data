@@ -47,9 +47,11 @@ OCR 기술은 문서를 이미지로 스캔하는 작업에 들어가는 시간�
 Filetree (modifying)
 
 ## Repository Explaination
-###### 📁 deep-text-recognition-benchmark<br/>code folder
+###### 📁 src<br/>code file
 > ###### 📄 json_to_txt.py<br/>Take text in info file(.json) and each image path and create a text file(.txt)
 > ###### 📄 modify_txt.ipynb<br/>Modify created text file to suitable format for making lmdb data
+
+###### 📁 deep-text-recognition-benchmark<br/>Clova AI deep text recognition benchmark
 > ###### 📄 create_lmdb_dataset.py<br/>Clova AI's deep text recognition - code creating lmdb data
 > ###### 📄 train.py<br/>Clova AI deep text recognition - training code
 > ###### 📄 test.py<br/>Clova AI deep text recognition - test code
