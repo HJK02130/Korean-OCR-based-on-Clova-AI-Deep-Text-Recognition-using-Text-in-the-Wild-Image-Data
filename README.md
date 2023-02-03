@@ -64,30 +64,25 @@ Filetree (modifying) result folder!!
 <br/>
 
 ## Architecture
-### Training Data
+### Data
 + [DACON training data](https://dacon.io/competitions/official/235970/overview/description)
-	+ Image : Text cropped text-in-the-wild image data
-	+ Text file(.csv) : Text in image
 + [AI Hub data](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=105)
-	+ Image : Text-in-the-wild image
-	+ Info file(.json) : Text, text bounding box coordinate and etc.
 + Generated data
 	+ We made new generated data with random Korean text image with random font, text impact and random background image
 	+ [generator reference](https://github.com/Belval/TextRecognitionDataGenerator)
 + [Kaist data](http://www.iapr-tc11.org/mediawiki/index.php/KAIST_Scene_Text_Database)
-	+ Text-in-the-wild image data
 	
 <br/>
 
 ### Preprocessing
 #### Image preprocessing
 + AI Hub data 
-	+ Create text cropped image using bounding box coordinate in info file
+	+ Create text cropped image using bounding box coordinate
 #### File preprocessing
 + DACON data
-	+ Take text in text file(.csv) and each image path and create a text file(.txt)
+	+ Take text in information file(.csv) and each image path and create a text file(.txt)
 + AI Hub data
-	+ Take text in info file(.json) and each image path and create a text file(.txt)
+	+ Take text in information file(.json) and each image path and create a text file(.txt)
 + Generated data
 	+ Create text file with each image path and each text of image
 #### Create LMDB data
@@ -99,13 +94,13 @@ python deep-text-recognition-benchmark/create_lmdb_dataset.py \
 ~~~
 
 #### Split data
-+ split training data to training, validation data
-+ [DACON test data](https://dacon.io/competitions/official/235970/data)
++ split data to training, validation data
++ [test data](https://dacon.io/competitions/official/235970/data)
 
 <br/><br/>
 
 ### Training
-We tried to train model NVBC(None-VGG-BiLSTM-CTC) and used pre-trained OCR model
+We tried to train model NVBC(None-VGG-BiLSTM-CTC) and used pre-trained OCR model using Clova AI deep learning OCR training code as follows. However, due to hardware limitations, it took a long time. So we stopped training in the middle. Please note this.
 ~~~
 python deep-text-recognition-benchmark/train.py \
 --train_data result/training \
@@ -124,6 +119,7 @@ python deep-text-recognition-benchmark/train.py \
 <br/>
 
 ### Test
+We tested best accracy NVBC model with DACON test data set as follows.
 ~~~
 python deep-text-recognition-benchmark/test.py \
 --eval_data result/validation --benchmark_all_eval \
@@ -132,12 +128,10 @@ python deep-text-recognition-benchmark/test.py \
 ~~~
 
 ## Result
-!! We didn't train model to the end !!
+‼ Due to hardware limitations, we stopped training in the middle. Below table is a result of unfinished trained model. it you have better GPU and lots of time to train, you will be able to achieve better accuracy.
 ||Public test set|Private test set|
 |:---:|:---|:---|
 |Accuracy|0.53909|0.52316|
-
-If you have better GPU and lots of time to train, you will undoubtedly be able to achieve near-perfect accuracy.
 
 ## Conclusion
 Using Clova AI text recognition with deep learning methods in this DACON contest, It was able to learn a wide range of data handling methods by performing various data processing such as image preprocessing, image generating, and lmdb conversion of various text-in-the-wild image and other documents. In addition, it was a valuable opportunity to improve image and natural language problem solving skills by training with tuning, analyzing and correcting problems in the results. However, due to hardware limitations, all the collected data could not be used, and even training had to be forcibly terminated, resulting in lower accuracy than expected. We are sure that better results would be obtained if all epochs were completely trained using all the data in a better hardware environment, and We are planning to train our trained model in better hardware environment. If Korean OCR using text-in-the-wild develops further, the time and effort to detect and recognize text in images will be greatly reduced, and productivity can be increased by minimizing the process required to convert text images into data and automating the process.
