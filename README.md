@@ -27,13 +27,14 @@ OCR 기술은 문서를 이미지로 스캔하는 작업에 들어가는 시간�
 ## Issue
 !! We didn't used all data we collected<br/>
 !! We didn't do training to the end<br/>
-!! You need better GPU<br/>
+!! You need better GPU than T4, P100<br/>
 !! It takes a long time
 
 ## Environment
 + Pytorch 1.3.1
 + CUDA 10.1
 + Python 3.6
++ T4, P100 GPU
 
 ## Requirements
 + lmbd
