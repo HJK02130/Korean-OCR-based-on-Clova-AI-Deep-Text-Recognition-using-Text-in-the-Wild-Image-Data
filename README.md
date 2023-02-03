@@ -51,20 +51,20 @@ OCR 기술은 문서를 이미지로 스캔하는 작업에 들어가는 시간�
 │       ├── prediction.py<br/>
 │       ├── sequence_modeling.py<br/>
 │       └── transformation.py<br/>
-|<br/>
+│<br/>
 ├── saved_models/<br/>
 │   └── None-VGG-BiLSTM-CTC-Seed1111/<br/>
 │       ├── best_accuracy.pth<br/>
 │       └── best_norm_ED.pth<br/>
-|<br/>
+│<br/>
 ├── src/<br/>
 │   ├── json_to_txt.py<br/>
 │   └── modify_txt.ipynb<br/>
-|<br/>
+│<br/>
 ├── result/<br/>
 │   ├── training<br/>
 │   └── validaion<br/>
-|<br/>
+│<br/>
 ├── create_lmdb_dataset.py<br/>
 ├── dataset.py<br/>
 ├── model.py<br/>
