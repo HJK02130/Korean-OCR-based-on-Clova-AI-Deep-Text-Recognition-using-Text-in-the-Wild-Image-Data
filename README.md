@@ -1,4 +1,4 @@
-# <div align=center> Korean OCR based on Clova AI Deep Text Recognition <br/> using AI Hub Data </div>
+# <div align=center> Korean OCR based on Clova AI Deep Text Recognition <br/> using Text-In-The-Wild Image Data </div>
 
 <div align=right> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/HJK02130/Korean-OCR-based-on-Clova-AI-Deep-Text-Recognition-using-AI-Hub-Data?style=flat-square"> <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/HJK02130/Korean-OCR-based-on-Clova-AI-Deep-Text-Recognition-using-AI-Hub-Data?style=flat-square"> <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/HJK02130/Korean-OCR-based-on-Clova-AI-Deep-Text-Recognition-using-AI-Hub-Data?style=flat-square"> </div>
 
