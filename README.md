@@ -166,6 +166,7 @@ Using Clova AI text recognition with deep learning methods in this DACON contest
 [2] clovaai. (2020). deep-text-recognition-benchmark[Source code]. https://github.com/clovaai/deep-text-recognition-benchmark<br/>
 [3] youngkyung. (2019). SynthText_kr[Source code]. https://github.com/youngkyung/SynthText_kr<br/>
 [4] Belval. (2022). TextRecognitionDataGenerator[Source code]. https://github.com/Belval/TextRecognitionDataGenerator<br/>
+[5] Geonuk Kim, Jaemin Son, Kanghyu Lee, Jaesik Min. (2022). Character decomposition to resolve class imbalance problem in Hangul OCR, 2, https://doi.org/10.48550/arXiv.2208.06079
 
 ## Developer
 Hyunji Kim, Yeaji Kim, Changhyeon Lee.
