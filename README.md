@@ -162,7 +162,10 @@ python deep-text-recognition-benchmark/test.py \
 Using Clova AI text recognition with deep learning methods in this DACON contest, It was able to learn a wide range of data handling methods by performing various data processing such as image preprocessing, image generating, and lmdb conversion of various text-in-the-wild image and other documents. In addition, it was a valuable opportunity to improve image and natural language problem solving skills by training with tuning, analyzing and correcting problems in the results. However, due to hardware limitations, all the collected data could not be used, and even training had to be forcibly terminated, resulting in lower accuracy than expected. We are sure that better results would be obtained if all epochs were completely trained using all the data in a better hardware environment, and We are planning to train our trained model in better hardware environment. If Korean OCR using text-in-the-wild develops further, the time and effort to detect and recognize text in images will be greatly reduced, and productivity can be increased by minimizing the process required to convert text images into data and automating the process.
 
 ## Reference
-
+[1] AI Hub. (2020). 야외 실제 촬영 한글 이미지. https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=105<br/>
+[2] clovaai. (2020). deep-text-recognition-benchmark[Source code]. https://github.com/clovaai/deep-text-recognition-benchmark<br/>
+[3] youngkyung. (2019). SynthText_kr[Source code]. https://github.com/youngkyung/SynthText_kr<br/>
+[4] Belval. (2022). TextRecognitionDataGenerator[Source code]. https://github.com/Belval/TextRecognitionDataGenerator<br/>
 
 ## Developer
 Hyunji Kim, Yeaji Kim, Changhyeon Lee.
